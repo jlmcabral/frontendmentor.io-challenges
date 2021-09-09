@@ -6,8 +6,6 @@ This is the repository where I will be storing all the solutions I submitted at 
 
 ### Newbie
 
-| Tags           | Challanges              | Live             |  Code            | Type | 
+| Tags           | Challanges              | Live             |  Code            | Type |
 | ---            | --                      |  --              | --               |  --  |
-| HTML--CSS      | Order summary component | (still not live) | (still repo yet) | Free |
-
-
+| HTML--CSS      | Order summary component | (still not live) | [code](https://github.com/jlmcabral/frontendmentor.io-challenges/tree/main/order-summary-component-main)] | Free |
