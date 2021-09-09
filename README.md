@@ -1,4 +1,4 @@
-# List of my frontendmentor.io sollutions
+# List of my frontendmentor.io solutions
 
 This is the repository where I will be storing all the solutions I submitted at [frontendmentor.io](https://www.frontendmentor.io/profile/jlmcabral).
 
@@ -6,6 +6,6 @@ This is the repository where I will be storing all the solutions I submitted at 
 
 ### Newbie
 
-| Tags           | Challanges              | Live             |  Code            | Type |
+| Tags           | Challenges              | Live             |  Code            | Type |
 | ---            | --                      |  --              | --               |  --  |
-| HTML--CSS      | Order summary component | (still not live) | [code](https://github.com/jlmcabral/frontendmentor.io-challenges/tree/main/order-summary-component-main)] | Free |
+| HTML--CSS      | Order summary component | (still not live) | [Solution Repo](https://github.com/jlmcabral/frontendmentor.io-challenges/tree/main/order-summary-component-main) | Free |
