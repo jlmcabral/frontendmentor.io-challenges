@@ -1,4 +1,4 @@
-# frontendmentor.io sollutions
+# List of my frontendmentor.io sollutions
 
 This is the repository where I will be storing all the solutions I submitted at [frontendmentor.io](https://www.frontendmentor.io/profile/jlmcabral).
 
