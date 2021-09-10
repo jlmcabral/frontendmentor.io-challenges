@@ -6,13 +6,12 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  <!-- - [Screenshot](#screenshot)
-  - [Links](#links) -->
+  - [Screenshot](#screenshot)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
 <!-- - [Acknowledgments](#acknowledgments) -->
-
 
 ## Overview
 
@@ -22,9 +21,9 @@ Users should be able to:
 
 - See hover states for interactive elements
 
-<!-- ### Screenshot
+### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
@@ -32,8 +31,8 @@ Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to t
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+- Solution URL: [https://github.com/jlmcabral/frontendmentor.io-challenges/tree/main/order-summary-component-main](https://github.com/jlmcabral/frontendmentor.io-challenges/tree/main/order-summary-component-main)
+- Live Site URL: [https://jlmcabral-order-summary-component-main.netlify.app](https://jlmcabral-order-summary-component-main.netlify.app)
 
 ## My process
 
@@ -48,6 +47,7 @@ Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to t
 ## Author
 
 <!-- - Website - [Add your name here](https://www.your-site.com) -->
+
 - Frontend Mentor - [@jlmcabral](https://www.frontendmentor.io/profile/jlmcabral/)
 - LinkedIn - [LinkedIn Profile](https://www.linkedin.com/in/jos%C3%A9-cabral/)
 
