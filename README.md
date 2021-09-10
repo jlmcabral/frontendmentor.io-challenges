@@ -8,4 +8,4 @@ This is the repository where I will be storing all the solutions I submitted at 
 
 | Tags           | Challenges              | Live             |  Code            | Type |
 | ---            | --                      |  --              | --               |  --  |
-| HTML--CSS      | Order summary component | (still not live) | [Solution Repo](https://github.com/jlmcabral/frontendmentor.io-challenges/tree/main/order-summary-component-main) | Free |
+| HTML--CSS      | Order summary component | [Website](https://jlmcabral-order-summary-component-main.netlify.app) | [Solution Repo](https://github.com/jlmcabral/frontendmentor.io-challenges/tree/main/order-summary-component-main) | Free |
