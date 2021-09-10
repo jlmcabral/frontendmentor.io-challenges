@@ -6,6 +6,7 @@ This is the repository where I will be storing all the solutions I submitted at 
 
 ### Newbie
 
-| Tags           | Challenges              | Live             |  Code            | Type |
-| ---            | --                      |  --              | --               |  --  |
-| HTML--CSS      | Order summary component | [Website](https://jlmcabral-order-summary-component-main.netlify.app) | [Solution Repo](https://github.com/jlmcabral/frontendmentor.io-challenges/tree/main/order-summary-component-main) | Free |
+| Tags      | Challenges                   | Live                                                                  | Code                                                                                                                   | Type |
+| --------- | ---------------------------- | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ---- |
+| HTML--CSS | Order summary component      | [Website](https://jlmcabral-order-summary-component-main.netlify.app) | [Solution Repo](https://github.com/jlmcabral/frontendmentor.io-challenges/tree/main/order-summary-component-main)      | Free |
+| HTML--CSS | Stats preview card component | (Not Deployed Yet)                                                    | [Solution Repo](https://github.com/jlmcabral/frontendmentor.io-challenges/tree/main/stats-preview-card-component-main) | Free |
