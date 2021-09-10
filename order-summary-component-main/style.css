@@ -5,3 +5,175 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+:root {
+  --fs-main: 13px;
+  --ff-primary: "Red Hat Display", sans-serif;
+
+  --clr-primary-pale-blue: hsl(225, 100%, 94%);
+  --clr-primary-bright-blue: hsl(245, 75%, 52%);
+  --clr-neutral-pale-blue: hsl(225, 100%, 98%);
+  --clr-neutral-desaturated-blue: hsl(224, 23%, 55%);
+  --clr-neutral-dark-blue: hsl(223, 47%, 23%);
+  --clr-white: #fff;
+  --clr-active: hsl(245, 83%, 68%);
+  --clr-bg: hsl(224, 94%, 94%);
+
+  --border-radius: 13px;
+}
+
+body {
+  font-size: var(--fs-main);
+  font-family: var(--ff-primary);
+  text-align: center;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--clr-neutral-desaturated-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  color: var(--clr-neutral-dark-blue);
+  line-height: 1;
+}
+h1 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: var(--fs-main);
+  line-height: 1.6;
+}
+
+button {
+  font-weight: 700;
+  border: 0;
+  padding: 1.1em;
+  width: 100%;
+  background: none;
+  font-family: var(--ff-primary);
+}
+button:hover {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  font-weight: 700;
+}
+a:active {
+  text-decoration: none;
+  color: var(--clr-active);
+}
+
+.rounded-top {
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+.rounded-border {
+  border-radius: var(--border-radius);
+}
+
+.bg-main {
+  background-image: url("images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-color: var(--clr-bg);
+}
+
+.card {
+  max-width: 20rem;
+  margin: 2rem;
+  background-color: var(--clr-white);
+  box-shadow: 0 1.5rem 2rem -1rem var(--clr-primary-pale-blue);
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.bg-accent {
+  background-color: var(--clr-neutral-pale-blue);
+}
+
+.btn-primary {
+  background-color: var(--clr-primary-bright-blue);
+  color: var(--clr-white);
+  margin-bottom: 1rem;
+}
+.btn-primary:active {
+  background-color: var(--clr-active);
+}
+
+.btn-secondary {
+  color: var(--clr-neutral-desaturated-blue);
+  font-weight: 700;
+  padding: 0;
+}
+
+.btn-secondary:active {
+  color: var(--clr-neutral-dark-blue);
+}
+
+.plan {
+  font-size: 0.8rem;
+  display: flex;
+  padding: 1rem;
+  text-align: left;
+  margin: 1.5rem 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan > div {
+  flex-grow: 1;
+  padding-left: 1em;
+}
+
+.shadow-effect {
+  box-shadow: 0 1.2rem 1rem 0 var(--clr-primary-pale-blue);
+}
+
+#icon-music {
+  width: 4em;
+  height: 4em;
+}
+
+@media (min-width: 376px) {
+  :root {
+    --fs-main: 16px;
+  }
+  .bg-main {
+    background-image: url("images/pattern-background-desktop.svg");
+  }
+  .card {
+    max-width: 26rem;
+  }
+  .card-content {
+    padding: 2.5rem;
+  }
+}
