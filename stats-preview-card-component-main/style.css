@@ -33,7 +33,6 @@ p {
 body {
   text-align: center;
   background-color: var(--clr-very-dark-blue);
-  height: 100vh;
   font-family: var(--ff-inter);
   font-size: var(--font-size);
   line-height: 1.6;
@@ -53,10 +52,8 @@ h1 {
 img {
   height: 100%;
   width: 100%;
-  max-width: 100%;
   border-top-left-radius: var(--border-radius);
   border-top-right-radius: var(--border-radius);
-  max-width: 25rem;
 }
 .card {
   background-color: var(--clr-dark-desaturated-blue);
@@ -88,7 +85,7 @@ img {
 }
 
 .card-content {
-  padding: 0 2rem;
+  padding: 1rem 2rem;
 }
 
 .highlighted-text {
