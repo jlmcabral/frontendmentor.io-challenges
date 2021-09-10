@@ -84,7 +84,7 @@ img {
 a {
   font-weight: 700;
 }
-a:active {
+a:hover {
   text-decoration: none;
   color: var(--clr-active);
 }
@@ -125,7 +125,7 @@ a:active {
   color: var(--clr-white);
   margin-bottom: 1rem;
 }
-.btn-primary:active {
+.btn-primary:hover {
   background-color: var(--clr-active);
 }
 
@@ -135,7 +135,7 @@ a:active {
   padding: 0;
 }
 
-.btn-secondary:active {
+.btn-secondary:hover {
   color: var(--clr-neutral-dark-blue);
 }
 
