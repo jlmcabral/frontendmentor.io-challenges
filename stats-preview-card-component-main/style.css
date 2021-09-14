@@ -37,32 +37,52 @@ body {
   font-size: var(--font-size);
   line-height: 1.6;
   color: var(--clr-p);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 h1 {
   color: var(--clr-white);
   margin: 1em 0;
   font-weight: 700;
+  font-size: 2rem;
 }
 
-img {
+.image-wrapper {
+  height: 16rem;
+  width: 100%;
+  position: relative;
+}
+
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsla(277, 64%, 61%, 0.69);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.img {
   height: 100%;
   width: 100%;
-  border-top-left-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
+  background-image: url("./images/image-header-mobile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .card {
   background-color: var(--clr-dark-desaturated-blue);
   border-radius: var(--border-radius);
-  margin: 1.5rem;
-  max-width: 25rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .main-paragraph {
@@ -76,7 +96,7 @@ img {
 .stats > p {
   text-transform: uppercase;
   font-family: var(--ff-lexend-deca);
-  font-size: 0.9em;
+  font-size: 0.65rem;
   letter-spacing: 2px;
 }
 
@@ -100,29 +120,30 @@ img {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 1000px) {
-  /* .card {
-    flex-direction: row-reverse;
-    max-width: 50rem;
+@media (min-width: 700px) {
+  body {
     text-align: left;
   }
-  .card-content {
-    padding: 3rem 4rem 3rem 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  .card {
+    flex-direction: row-reverse;
+    max-height: 27rem;
+  }
+  .image-wrapper {
+    width: 100%;
+    height: 27rem;
+  }
+  .img {
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/image-header-desktop.jpg");
+    background-size: cover;
   }
   .stats-wrapper {
     display: flex;
     justify-content: space-between;
   }
-  .stats {
-    margin: 0;
+  .card-content {
+    padding: 2rem 8rem 2rem 3rem;
+    min-width: 50%;
   }
-  img {
-    border-radius: 0;
-    height: 100%;
-    max-width: 50%;
-    object-fit: cover;
-  } */
 }
