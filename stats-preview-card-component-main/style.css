@@ -50,29 +50,15 @@ h1 {
   font-size: 2rem;
 }
 
-.image-wrapper {
-  height: 16rem;
+img {
+  display: block;
   width: 100%;
-  position: relative;
+  mix-blend-mode: multiply;
 }
 
-.image-wrapper::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: hsla(277, 64%, 61%, 0.69);
-  z-index: 2;
+.image-wrapper {
   width: 100%;
-  height: 100%;
-}
-.img {
-  height: 100%;
-  width: 100%;
-  background-image: url("./images/image-header-mobile.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: var(--clr-soft-violet);
 }
 
 .card {
@@ -120,28 +106,46 @@ h1 {
   color: hsl(228, 45%, 44%);
 }
 
+.image-desktop {
+  display: none;
+}
+
 @media (min-width: 700px) {
   body {
     text-align: left;
   }
   .card {
     flex-direction: row-reverse;
-    max-height: 27rem;
+    max-height: 29rem;
   }
   .image-wrapper {
     width: 100%;
-    height: 27rem;
+    height: 29rem;
   }
-  .img {
-    width: 100%;
+  img {
     height: 100%;
-    background-image: url("./images/image-header-desktop.jpg");
-    background-size: cover;
+    object-fit: cover;
   }
+
   .stats-wrapper {
     display: flex;
     justify-content: space-between;
   }
+  .card-content {
+    padding: 2rem 3rem 2rem 2rem;
+    min-width: 50%;
+  }
+
+  .image-mobile {
+    display: none;
+  }
+
+  .image-desktop {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
   .card-content {
     padding: 2rem 8rem 2rem 3rem;
     min-width: 50%;
