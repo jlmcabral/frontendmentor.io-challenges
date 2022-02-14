@@ -25,12 +25,55 @@
       }
     </style>
   </head>
-  <body>
+  <body
+    class="bg-main-bg h-screen text-white p-6 flex flex-col justify-center font-outfit"
+  >
     <main>
-      <section>
+      <section class="bg-card-bg p-6 rounded-xl">
         <div>
-          Equilibrium #3429 Our Equilibrium collection promotes balance and
-          calm. 0.041 ETH 3 days left Creation of Jules Wyvern
+          <figure class="flex justify-center">
+            <img
+              src="../assets/images/image-equilibrium.jpg"
+              alt="equilibrium statue"
+              class="rounded-lg mb-4"
+            />
+          </figure>
+          <h1 class="font-semibold text-xl mb-4">Equilibrium #3429</h1>
+
+          <section class="text-soft-blue font-light text-md pb-3">
+            Our Equilibrium collection promotes balance and calm.
+          </section>
+
+          <section class="flex justify-between pb-3 border-b-[1px] border-line">
+            <div class="text-cyan flex items-center">
+              <div class="mr-1">
+                <img
+                  src="../assets/images/icon-ethereum.svg"
+                  alt="icon-ethereum"
+                />
+              </div>
+              <div>0.041 ETH</div>
+            </div>
+            <div class="text-soft-blue flex items-center">
+              <div class="mr-1">
+                <img src="../assets/images/icon-clock.svg" alt="icon-clock" />
+              </div>
+              <div>3 days left</div>
+            </div>
+          </section>
+
+          <section class="flex mt-4">
+            <div class="mr-4">
+              <img
+                src="../assets/images/image-avatar.png"
+                alt="avatar"
+                class="rounded-full border-[1px] border-white h-8"
+              />
+            </div>
+            <div class="text-soft-blue">
+              Creation of <span class="text-white">Jules Wyvern</span>
+            </div>
+          </section>
         </div>
       </section>
     </main>

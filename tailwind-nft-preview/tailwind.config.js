@@ -12,6 +12,7 @@ module.exports = {
         'main-bg': '#0d192b',
         'card-bg': '#14253d',
         'line': '#2f415b',
+        'white': '#ffffff',
     },
   },
   plugins: [],
