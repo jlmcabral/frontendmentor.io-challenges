@@ -31,14 +31,29 @@
     <main>
       <section class="bg-card-bg p-6 rounded-xl max-w-sm mx-auto">
         <div>
-          <figure class="flex justify-center">
-            <img
-              src="../assets/images/image-equilibrium.jpg"
-              alt="equilibrium statue"
-              class="rounded-lg mb-4"
-            />
-          </figure>
-          <h1 class="font-semibold text-xl mb-4">Equilibrium #3429</h1>
+          <div class="relative">
+            <figure class="flex justify-center mb-4">
+              <img
+                [src]="cardImageUrl"
+                alt="equilibrium statue"
+                class="rounded-lg"
+              />
+            </figure>
+            <div
+              class="absolute rounded-lg top-0 left-0 h-full w-full hover:flex justify-center items-center opacity-0 bg-soft-blue/70 hover:opacity-100 hover:cursor-pointer"
+            >
+              <img
+                src="../assets/images/icon-view.svg"
+                alt="Icon to view image"
+                class="w-14 h-14"
+              />
+            </div>
+          </div>
+          <h1
+            class="font-semibold text-xl mb-4 hover:cursor-pointer hover:text-cyan"
+          >
+            {{ cardTitle }}
+          </h1>
 
           <section class="text-soft-blue font-light text-md pb-3">
             Our Equilibrium collection promotes balance and calm.
@@ -52,26 +67,29 @@
                   alt="icon-ethereum"
                 />
               </div>
-              <div>0.041 ETH</div>
+              <div>{{price}} ETH</div>
             </div>
             <div class="text-soft-blue flex items-center">
               <div class="mr-1">
                 <img src="../assets/images/icon-clock.svg" alt="icon-clock" />
               </div>
-              <div>3 days left</div>
+              <div>{{daysLeft}}} days left</div>
             </div>
           </section>
 
           <section class="flex mt-4">
             <div class="mr-4">
               <img
-                src="../assets/images/image-avatar.png"
+                [src]="creatorImgUrl"
                 alt="avatar"
                 class="rounded-full border-[1px] border-white h-8"
               />
             </div>
             <div class="text-soft-blue">
-              Creation of <span class="text-white">Jules Wyvern</span>
+              Creation of
+              <span class="text-white hover:cursor-pointer hover:text-cyan"
+                >{{creatorName}}</span
+              >
             </div>
           </section>
         </div>
