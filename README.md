@@ -12,4 +12,4 @@ This is the repository where I will be storing all the solutions I submitted at 
 | HTML--CSS | Stats preview card component | [Website](https://jlmcabral-stats-preview-card-component-main.netlify.app/) | [Solution Repo](https://github.com/jlmcabral/frontendmentor.io-challenges/tree/main/stats-preview-card-component-main) | Free |
 | HTML--CSS | FAQ accordion card component | [Website](https://jlmcabral-faq-accordion-card-main.netlify.app/)           | [Solution Repo](https://github.com/jlmcabral/frontendmentor.io-challenges/tree/main/faq-accordion-card-main)           | Free |
 | HTML--CSS--Angular--TailwindCSS | NFT Preview Card Component | [Website](https://jlmcabral-tailwind-nft-preview.netlify.app/)           | [Solution Repo](https://github.com/jlmcabral/frontendmentor.io-challenges/tree/main/tailwind-nft-preview)           | Free |
-| HTML--CSS--VueJS--TailwindCSS | Space Tourism multi-page website | In work | In work | Free |
+| HTML--CSS | Space Tourism multi-page website | In work | In work | Free |
