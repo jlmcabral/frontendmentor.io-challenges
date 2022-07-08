@@ -1,0 +1,96 @@
+/* Custom properties */
+:root {
+  /* colors */
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+
+  /* font-sizes */
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+
+  /* font-families */
+  --ff-serif: "Bellefair", serif;
+  --ff-sans-cond: "Barlow Condensed", sans-serif;
+  --ff-sans-normal: "Barlow", sans-serif;
+}
+
+
+/* Utility Classes */
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  padding-inline: 2em;
+  max-width: 80rem;
+  margin-inline: auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+
+/* Colors */
+.bg-dark {
+  background-color: hsl(var(--clr-dark) / var(--alpha, 100%));
+}
+
+.bg-accent {
+  background-color: hsl(var(--clr-light) / var(--alpha, 100%));
+}
+
+.bg-white {
+  background-color: hsl(var(--clr-white) / var(--alpha, 100%));
+}
+
+.text-dark {
+  color: hsl(var(--clr-dark));
+}
+
+.text-accent {
+  color: hsl(var(--clr-light));
+}
+
+.text-white {
+  color: hsl(var(--clr-white));
+}
+
+.alpha-20 {
+  --alpha: 20%;
+}
+
+
+/* Typography */
+h2 {
+  text-transform: uppercase;
+}
