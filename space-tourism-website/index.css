@@ -58,6 +58,15 @@
   flex-grow: 1;
 }
 
+/* Applies a margin-top to all child elements of .flow */
+/* Except to the first element */
+/* The same could be done with te :last-child together with margin-bottom*/
+/* Outline can be removed. It's only being used for debugging purposes */
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-space, 1rem);
+  outline: 1px solid red;
+}
+
 /* Colors */
 .bg-dark {
   background-color: hsl(var(--clr-dark) / var(--alpha, 100%));
