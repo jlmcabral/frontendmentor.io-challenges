@@ -64,7 +64,6 @@
 /* Outline can be removed. It's only being used for debugging purposes */
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-space, 1rem);
-  outline: 1px solid red;
 }
 
 /* Colors */
@@ -154,3 +153,73 @@ body {
   font-weight: 700;
   color: hsl(var(--clr-white) / 25%);
  }
+
+/* Components */
+
+.large-button {
+position: relative;
+border-radius: 50%;
+display: grid;
+z-index: 1;
+place-content: center;
+text-decoration: none;
+padding: 0 2em;
+aspect-ratio: 1;
+}
+
+.large-button::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: hsl(var(--clr-white) / 15%);
+  opacity: 0;
+  transition: opacity 300ms linear, transform 300ms ease-in-out;
+}
+
+.large-button:hover::after,
+.large-button:focus::after {
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+.primary-navigation {
+  --gap: 4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  --underline-gap: 2rem;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+.primary-navigation a > span {
+  font-weight: 700;
+  margin-right: 0.5em;
+}
+
+.underline-indicators > * {
+  cursor: pointer;
+  padding: var(--underline-gap, .75rem) 0;
+  border: 0;
+  border-bottom: 0.2rem solid hsl(var(--clr-white) / var(--alpha, 0%));
+}
+
+.underline-indicators > *:hover,
+.underline-indicators > *:focus {
+  --alpha: 50%;
+}
+
+.underline-indicators > .active,
+.underline-indicators> [aria-selected="true"] {
+  color: hsl(var(--clr-white));
+  --alpha: 100%;
+}
+
+.tab-list {
+  --gap: 2rem;
+}
