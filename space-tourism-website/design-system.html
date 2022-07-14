@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container flow" style="--flow-space: 4rem;">
       <h1 class="uppercase">Design System</h1>
 
       <section id="colors">
@@ -52,7 +52,7 @@
         </div>
       </section>
 
-      <section id="typography"  style="margin: 4rem 0">
+      <section id="typography">
         <h2 class="numbered-title"><span>02</span>Typography</h2>
         <div class="flex">
             <div class="flow" style="flex-basis: 100%; --flow-space: 3rem;">
@@ -76,7 +76,6 @@
                     <p class="text-accent">Heading 5 - Barlow Condensed Regular - 28px - 4.75 Character Space</p>
                     <p class="fs-500 uppercase ff-sans-cond letter-spacing-1 text-accent">So, you want to travel to space</p>
                 </div>
-
             </div>
 
             <div class="flow" style="flex-basis: 100%; --flow-space: 3rem;">
@@ -104,7 +103,7 @@
         <h2 class="numbered-title"><span>03</span> Interactive elements</h2>
 
         <!-- navigation -->
-        <div>
+        <div class="grid grid-place-center" style="margin-bottom: 5rem;">
           <nav>
             <ul class="primary-navigation underline-indicators flex">
               <li class="active"><a class="uppercase text-white letter-spacing-2" href="#"><span>01</span>Active</a>
@@ -112,31 +111,48 @@
               <li><a class="uppercase text-white letter-spacing-2" href="#"><span>03</span>Idle</a>
             </ul>
           </nav>
-      </div>
+          <p class="text-accent text-align-center">Different States of Navigation Bar</p>
+        </div>
 
-        <div class="flex">
+        <div class="flex space-around">
             <div style="margin-top: 5rem;">
                 <!-- explore button -->
                 <a href="#" class="large-button uppercase ff-serif text-dark bg-white fs-600">Explore</a>
             </div>
 
-            <div class="flow" style="margin-bottom: 50vh; --flow-space: 4rem;">
+            <div class="flow" style="margin-bottom: 50vh; --flow-space: 10rem;">
                 <!-- Tabs -->
-                <div class="tab-list underline-indicators flex">
-                  <button aria-selected="true" class="uppercase text-accent bg-dark ff-sans-cond letter-spacing-2">Moon</button>
-                  <button aria-selected="false" class="uppercase text-accent bg-dark ff-sans-cond letter-spacing-2">Mars</button>
-                  <button aria-selected="false" class="uppercase text-accent bg-dark ff-sans-cond letter-spacing-2">Europa</button>
+                <div class="grid grid-place-center">
+                  <div class="tab-list underline-indicators flex" style="justify-content: center;">
+                    <button aria-selected="true" class="uppercase text-accent bg-dark ff-sans-cond letter-spacing-2">Moon</button>
+                    <button aria-selected="false" class="uppercase text-accent bg-dark ff-sans-cond letter-spacing-2">Mars</button>
+                    <button aria-selected="false" class="uppercase text-accent bg-dark ff-sans-cond letter-spacing-2">Europa</button>
+                  </div>
+                  <p class="text-accent text-align-center">Tabs(Active, Hover, &Idle)</p>
                 </div>
 
+
                 <!-- Dots -->
-                <div class="dot-indicators flex">
-                  <button aria-selected="true"><span class="sr-only">Slide Title</span></button>
-                  <button aria-selected="false"><span class="sr-only">Slide Title</span></button>
-                  <button aria-selected="false"><span class="sr-only">Slide Title</span></button>
+                <div class="grid grid-place-center">
+                  <div class="dot-indicators flex" style="justify-content: center;">
+                    <button aria-selected="true"><span class="sr-only">Slide Title</span></button>
+                    <button aria-selected="false"><span class="sr-only">Slide Title</span></button>
+                    <button aria-selected="false"><span class="sr-only">Slide Title</span></button>
+                  </div>
+                  <p class="text-accent text-align-center">Slider 1 States (Active, Hover, &Idle)</p>
                 </div>
 
                 <!-- Numbers -->
-
+                <div class="grid grid-place-center">
+                  <div class="grid grid-place-center">
+                    <div class="number-indicators flex" style="flex-direction: column;">
+                      <button aria-selected="true" class="text-white bg-dark ff-serif fs-600">1</button>
+                      <button aria-selected="false" class="text-white bg-dark ff-serif fs-600">2</button>
+                      <button aria-selected="false" class="text-white bg-dark ff-serif fs-600">3</button>
+                    </div>
+                  </div>
+                  <p class="text-accent text-align-center">Slider 2 States (Active, Hover, & Idle)</p>
+                </div>
             </div>
         </div>
 
